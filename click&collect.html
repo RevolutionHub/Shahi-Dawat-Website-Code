@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>KAKI KA KITCHEN</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor C SS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/click&collect.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto ">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img class="logoimage" src="assets/img/logo.png" alt="">
+
+      </a>
+
+      <nav id="navmenu" class="navmenu" style="display: none;">
+        <ul>
+          <li>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" style="display: none;"></i>
+      </nav>
+      <div id="alert-box" style="display: none;">Added to cart!</div>
+      <a href="#cart" class="cart-link" id="cart-link">
+        <i class="bi bi-cart cart-icon"></i> <!-- Bootstrap Icons cart icon -->
+        <span class="cart-count" id="cart-count">$0.00</span>
+      </a>
+
+      <a></a>
+    </div>
+  </header>
+
+  <main class="main">
+
+
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section clickcollect-section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+
+        <p><span>Our</span> <span class="description-title">Menu</span></p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+
+        <ul class="nav nav-tabs d-flex justify-content-center" id="menu-delivery" data-aos="fade-up"
+          data-aos-delay="100">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Food</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Drinks</h4>
+            </a><!-- End tab nav item -->
+
+          </li>
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <h3>Food</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Panipuri.png" class="glightbox"><img src="assets/img/menu/Panipuri.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4>Panipuri</h4>
+                <p class="price">
+                  $8.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Panipuri" data-product-price="8.99">
+                  <img src="assets/img/menu/Panipuri.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+                <!-- End Menu Item -->
+              </div>
+              <!-- Menu Item -->
+
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/vadapav.png" class="glightbox"><img src="assets/img/menu/vadapav.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4>Vadapav</h4>
+                <p class="price">
+                  $9.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Vadapav" data-product-price="9.99">
+                  <img src="assets/img/menu/vadapav.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/dabeli.png" class="glightbox"><img src="assets/img/menu/dabeli.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4>Dabeli</h4>
+                <p class="price">
+                  $9.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Dabeli" data-product-price="9.99">
+                  <img src="assets/img/menu/dabeli.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/pizza.png" class="glightbox"><img src="assets/img/menu/pizza.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4>Pizza</h4>
+                <p class="price">
+                  $19.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Pizza" data-product-price="19.99">
+                  <img src="assets/img/menu/pizza.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Dahipuri.png" class="glightbox"><img src="assets/img/menu/Dahipuri.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4>Dahipuri</h4>
+                <p class="price">
+                  $10.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Dahipuri" data-product-price="10.99">
+                  <img src="assets/img/menu/Dahipuri.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Bhajipav.png" class="glightbox"><img src="assets/img/menu/Bhajipav.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> Bhaji Pav</h4>
+                <p class="price">
+                  $14.99                </p>
+                <div class="quantity-control-container" data-product-name="Bhaji Pav" data-product-price="14.99">
+                  <img src="assets/img/menu/Bhajipav.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/K3Sandwich.png" class="glightbox"><img src="assets/img/menu/K3Sandwich.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> K3 Sandwich</h4>
+                <p class="price">
+                  $12.99
+                </p>
+                <div class="quantity-control-container" data-product-name="K3 Sandwich" data-product-price="12.99">
+                  <img src="assets/img/menu/K3Sandwich.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Dalvada.png" class="glightbox"><img src="assets/img/menu/Dalvada.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> Dalvada</h4>
+                <p class="price">
+                  $9.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Dalvada" data-product-price="9.99">
+                  <img src="assets/img/menu/Dalvada.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Samosachaat.png" class="glightbox"><img src="assets/img/menu/Samosachaat.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> Samosa Chaat</h4>
+                <p class="price">
+                  $7.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Samosa Chaat" data-product-price="7.99">
+                  <img src="assets/img/menu/Samosachaat.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Tuvertotha.png" class="glightbox"><img src="assets/img/menu/Tuvertotha.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> Tuver Totha</h4>
+                <p class="price">
+                  $14.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Tuvertotha" data-product-price="14.99">
+                  <img src="assets/img/menu/Tuvertotha.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Bhel.png" class="glightbox"><img src="assets/img/menu/Bhel.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> Bhel</h4>
+                <p class="price">
+                  $10.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Bhel" data-product-price="10.99">
+                  <img src="assets/img/menu/Bhel.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Kachorichat.png" class="glightbox"><img src="assets/img/menu/Kachorichat.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> Kachori chat</h4>
+                <p class="price">
+                  $7.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Kachori chat" data-product-price="7.99">
+                  <img src="assets/img/menu/Kachorichat.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div>
+              <!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/khichu.png" class="glightbox"><img src="assets/img/menu/khichu.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4> Papdi khichu</h4>
+                <p class="price">
+                  $7.99
+                </p>
+                <div class="quantity-control-container" data-product-name="Khichu" data-product-price="7.99">
+                  <img src="assets/img/menu/khichu.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div>
+
+
+            </div>
+          </div><!-- End Food Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <h3>Drinks</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Mangolassi.png" class="glightbox"><img src="assets/img/menu/Mangolassi.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4>Mango Lassi</h4>
+                <p class="price">
+                  $4.50
+                </p>
+                <div class="quantity-control-container" data-product-name="Mango Lassi" data-product-price="4.50">
+                  <img src="assets/img/menu/Mangolassi.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Buttermilk.png" class="glightbox"><img src="assets/img/menu/Buttermilk.png"
+                    class="menu-img img-fluid" alt=""></a>
+                <h4>Buttermilk</h4>
+                <p class="price">
+                  $8.95
+                </p>
+                <div class="quantity-control-container" data-product-name="Buttermilk" data-product-price="5.95">
+                  <img src="assets/img/menu/Buttermilk.png" style="display: none;"></img>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                  </button>
+                </div>
+              </div><!-- Menu Item -->
+            </div>
+          </div><!-- End Drinks Menu Content -->
+        </div>
+      </div>
+    </section><!-- /Menu Section -->
+
+
+
+
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img src="assets/img/logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Cart -->
+    <div id="cartModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 style="text-align: left;">Your Cart</h2>
+          <span class="close" id="closeModal">&times;</span>
+        </div>
+        <div class="modal-header" id="pickupaddress" style="display: none;">
+          <h2 style="text-align: left;">Pickup Address:</h2>
+          <p style="color: red;">96 Stoddard Road, Wesley, Auckland 1041.</p>
+        </div>
+      <div id="modal-items">
+          <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <p class="cart-total">
+          <span> Total: </span>
+          <span id="modal-total">$0.00</span>
+        </p>
+        <p id="timelimit" style="text-align: center!important; color:red; display: none;">
+          Orders for pickup and delivery are only available between 5PM and 12PM.
+        </p>
+        <button id="checkoutButton" class="buttondetails mraginleft">Checkout</button>
+      </div> 
+      <!-- Container to center the icon -->
+
+   </div>
+
+              <!-- Modal for Cart -->
+        <div id="successpickup" class="modal" style="display: none;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p style="text-align: left;">Your order has been placed successfully. Please pay at counter.</p>
+              <span class="close" id="closeModalSuccesspickup">&times;</span>
+            </div>
+          </div>
+        </div>
+
+     <!--checkout modal-->
+    <div id="checkoutcontainer" class="checkoutcontainer modal" style="display: none;">
+      <div class="modal-content">
+        <div class="container section-title paddingzero modal-header" data-aos="fade-up">
+          <p><span>Your </span> <span class="description-title">Details<br></span></p>
+          <span class="close" id="closeModalcheckout">&times;</span>
+        </div>
+        <div class="modal-header" id="pickupaddresscheckout" style="display: none;">
+          <h2 style="text-align: left;">Pickup Address:</h2>
+          <p style="color: red;" id="savepickupaddress">96 Stoddard Road, Wesley, Auckland 1041.</p>
+        </div>
+          <div class="checkoutformmargin">
+          <form id="checkoutForm" action="https://script.google.com/macros/s/AKfycbyJ87WEHDS7q4OE_2vqj02CuQRVZKUTp15zykz3-ttPZl5vdcR8cvqANczrkmmIMmpX/exec" method="POST">
+            <div class="divcheckout">
+              <label class="labelcheckout" for="firstName">First Name:</label>
+              <input class="inputcheckout" type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="divcheckout">
+              <label class="labelcheckout" for="lastName">Last Name:</label>
+              <input class="inputcheckout" type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="divcheckout">
+              <label class="labelcheckout" for="email">Email:</label>
+              <input class="inputcheckout" type="email" id="email" name="email" required>
+            </div>
+            <div class="divcheckout">
+              <label class="labelcheckout" for="phoneNumber">Phone:</label>
+              <input class="inputcheckout" type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="order-summary">
+              <h3>Order Summary</h3>
+              <div id="checkout-items"><!-- Cart items will be dynamically inserted here --></div>
+              <p><strong>Total:</strong> <span id="checkout-total"></span></p>
+            </div>
+            <button type="submit" id="placeOrderButton" class="buttondetails" style="width: 150px;">Place Order</button>
+          </form>
+        </div>
+      </div>
+     </div>
+
+    
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/storeorder.js"></script>
+
+</body>
+
+</html>
