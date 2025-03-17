@@ -12,6 +12,11 @@
     text-align: center; /* Center the text content */
     margin-bottom: 20px; /* Space between menu items */
 }
+.menu-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between items */
+}
 
 /* Image Styling */
 .menu-item img {
@@ -25,7 +30,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px; /* Space above quantity control */
 }
 
 .quantity-control {
@@ -59,15 +63,15 @@
 }
 
 .quantity-control button:hover {
-    background-color: #ff7303; /* Darker yellow on hover */
+    background-color: #f01c1c; /* Darker yellow on hover */
 }
 
 /* Add to Cart Button */
 .add-to-cart {
-    background-color: #ff7303;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 4px solid #f01c1c;
+    padding: 20px 20px;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -100,12 +104,12 @@
 }
 
 
-.add-to-cart i {
-    margin-right: 8px; /* Space between icon and text */
-}
+/* .add-to-cart i {
+    margin-right: 8px; 
+} */
 
 .add-to-cart:hover {
-    background-color: #ff7303; /* Darker yellow on hover */
+    background-color: #f01c1c; /* Darker yellow on hover */
 }
 
 .deliverybutton{
@@ -337,3 +341,66 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  #menu-delivery .btn{
+        /* color: var(--contrast-color); */
+        background: var(--accent-color);
+        font-size: 20px;
+        padding: 8px 26px;
+        margin: 0;
+        border: none;
+        border-radius: 0px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: black;
+    border: 3px solid black; /* Outer border only */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr, td, th {
+    border: none; /* Remove all internal borders */
+}
+
+td {
+    color: white; /* Green text for content */
+}
+strong {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+td.price {
+    color: red; /* Red text for price */
+}
+
+/* Style to stack description below item */
+.item-container {
+    display: flex;
+    flex-direction: column;
+}
+td:last-child {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+td button {
+    display: inline-block;
+    border: 2px solid red;
+    background: none;
+    color: red;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+td button:hover {
+    background: red;
+    color: white;
+}

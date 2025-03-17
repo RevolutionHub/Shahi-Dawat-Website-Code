@@ -50,15 +50,21 @@
 
       </a>
 
-      <nav id="navmenu" class="navmenu" style="display: none;">
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Menu</a></li>
+          <li><a href="#promotion">Promotions</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
           </li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list" style="display: none;"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       <div id="alert-box" style="display: none;">Added to cart!</div>
-      <a href="#cart" class="cart-link" id="cart-link">
+      <a href="#cart" class="cart-link btn-getstarted" id="cart-link">
         <i class="bi bi-cart cart-icon"></i> <!-- Bootstrap Icons cart icon -->
         <span class="cart-count" id="cart-count">$0.00</span>
       </a>
@@ -78,278 +84,914 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
 
-        <p><span>Our</span> <span class="description-title">Menu</span></p>
+        <p>Our Menu</p>
+        <!-- <p style="color: #E74C3C;font-size: 1rem;">Authentic Indian flavors, from rich curries to sizzling tandoori.<br></p> -->
       </div><!-- End Section Title -->
-    
+
       <div class="container">
 
         <ul class="nav nav-tabs d-flex justify-content-center" id="menu-delivery" data-aos="fade-up"
           data-aos-delay="100">
 
-          <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>Food</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>Drinks</h4>
-            </a><!-- End tab nav item -->
-
+          <li class="nav-item me-2">
+            <a class="btn active" data-bs-toggle="pill" href="#entree">Entree</a>
           </li>
-
+          <li class="nav-item me-2">
+            <a class="btn" data-bs-toggle="pill" href="#vegetariancurries">Vegetarian Curries</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="btn" data-bs-toggle="pill" href="#chickencurries">Chicken Curries</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="btn" data-bs-toggle="pill" href="#seafoodcurries">Seafood Curries</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="btn" data-bs-toggle="pill" href="#lambcurries">Lamb Curries</a>
+          </li>
         </ul>
 
         <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+           <div class="tab-pane fade active show" id="entree">
+            <table>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chooza Tikka</strong>
+                    <span>Tender pieces of boneless chicken marinated in spices overnight and smoked over charcol,
+                      served on sizzler with side of mint sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$20.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChoozaTikka" data-product-price="20.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Vegetable Samosa</strong>
+                    <span>Crispy, deep fried pastry, filled with potatoes and peas flavored with fresh spices, served
+                      with side of tamarind sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$10.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="VegetableSamosa"
+                    data-product-price="10.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Seekh Kebab</strong>
+                    <span>Minced lamb flavoured with exotic spices, rolled onto a skewer and smoked over charcol, served
+                      on a sizzler with mint sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$20.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="SeekhKebab" data-product-price="20.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Mixed Platter For Two</strong>
+                    <span>A combination of vegetable samosa, pakora, chooza tikka & seekh kebab served on a sizzler with
+                      mint & tamarind sauce. a healthy balance indeed.</span>
+                  </div>
+                </td>
+                <td class="price">$30.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="MixedPlatterForTwo"
+                    data-product-price="30.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Vegetarian Platter For Two</strong>
+                    <span>A combination of vegetable samosas, pakoras & onion bhaji served on a sizzler with tamarind
+                      sauce. a treat for all vegetarians.</span>
+                  </div>
+                </td>
+                <td class="price">$25.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="VegetarianPlatterForTwo"
+                    data-product-price="25.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Pakora</strong>
+                    <span>An assortment of fresh chopped vegetables dipped in mildly spiced chickpea batter and deep
+                      fried to perfection.</span>
+                  </div>
+                </td>
+                <td class="price">$12.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="Pakora" data-product-price="12.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Onion Bhaji</strong>
+                    <span>Sliced onions deep - fried in a mildly spiced chickpea batter and served with a side of
+                      tamarind sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$10.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="OnionBhaji" data-product-price="10.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Tandoori Prawns</strong>
+                    <span>Tiger prawns marinated in yoghurt, herbs and spices cooked gently in tandoor, served on
+                      sizzler with a side of mint sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$25.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="TandooriPrawns" data-product-price="25.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Tandoori Chicken</strong>
+                    <span> A tender spring chicken marinated in our traditional spice mix with yoghurt and smoked to
+                      perfection over charcoal. served with a side of mint sauce. </span>
+                  </div>
+                </td>
+                <td class="price">$20.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="TandooriChicken"
+                    data-product-price="25.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Tandoori Platter For Two</strong>
+                    <span> A combination of tandoori chicken, chooza tikka, seekh kebab & tandoori prawns served on a
+                      sizzler with mint sauce. a scrumptious selection from the tandoor. </span>
+                  </div>
+                </td>
+                <td class="price">$35.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="TandooriPlatterForTwo"
+                    data-product-price="35.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Meat Samosa</strong>
+                    <span> Crispy, deep fried pastry, filled with minced chicken flavored with fresh spices, served with
+                      a side of mint sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$12.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="MeatSamosa" data-product-price="12.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Prawn Twisters</strong>
+                    <span>Seasoned prawns inside a crispy wonton style pastry. served with a side of sweet chilli
+                      sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$22.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PrawnTwisters" data-product-price="22.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
 
-          <div class="tab-pane fade active show" id="menu-starters">
+            </table>
 
-            <div class="tab-header text-center">
-              <h3>Food</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Panipuri.png" class="glightbox"><img src="assets/img/menu/Panipuri.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4>Panipuri</h4>
-                <p class="price">
-                  $8.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Panipuri" data-product-price="8.99">
-                  <img src="assets/img/menu/Panipuri.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-                <!-- End Menu Item -->
-              </div>
-              <!-- Menu Item -->
-
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/vadapav.png" class="glightbox"><img src="assets/img/menu/vadapav.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4>Vadapav</h4>
-                <p class="price">
-                  $9.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Vadapav" data-product-price="9.99">
-                  <img src="assets/img/menu/vadapav.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/dabeli.png" class="glightbox"><img src="assets/img/menu/dabeli.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4>Dabeli</h4>
-                <p class="price">
-                  $9.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Dabeli" data-product-price="9.99">
-                  <img src="assets/img/menu/dabeli.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/pizza.png" class="glightbox"><img src="assets/img/menu/pizza.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4>Pizza</h4>
-                <p class="price">
-                  $19.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Pizza" data-product-price="19.99">
-                  <img src="assets/img/menu/pizza.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Dahipuri.png" class="glightbox"><img src="assets/img/menu/Dahipuri.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4>Dahipuri</h4>
-                <p class="price">
-                  $10.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Dahipuri" data-product-price="10.99">
-                  <img src="assets/img/menu/Dahipuri.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Bhajipav.png" class="glightbox"><img src="assets/img/menu/Bhajipav.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> Bhaji Pav</h4>
-                <p class="price">
-                  $14.99                </p>
-                <div class="quantity-control-container" data-product-name="Bhaji Pav" data-product-price="14.99">
-                  <img src="assets/img/menu/Bhajipav.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/K3Sandwich.png" class="glightbox"><img src="assets/img/menu/K3Sandwich.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> K3 Sandwich</h4>
-                <p class="price">
-                  $12.99
-                </p>
-                <div class="quantity-control-container" data-product-name="K3 Sandwich" data-product-price="12.99">
-                  <img src="assets/img/menu/K3Sandwich.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Dalvada.png" class="glightbox"><img src="assets/img/menu/Dalvada.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> Dalvada</h4>
-                <p class="price">
-                  $9.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Dalvada" data-product-price="9.99">
-                  <img src="assets/img/menu/Dalvada.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Samosachaat.png" class="glightbox"><img src="assets/img/menu/Samosachaat.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> Samosa Chaat</h4>
-                <p class="price">
-                  $7.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Samosa Chaat" data-product-price="7.99">
-                  <img src="assets/img/menu/Samosachaat.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Tuvertotha.png" class="glightbox"><img src="assets/img/menu/Tuvertotha.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> Tuver Totha</h4>
-                <p class="price">
-                  $14.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Tuvertotha" data-product-price="14.99">
-                  <img src="assets/img/menu/Tuvertotha.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Bhel.png" class="glightbox"><img src="assets/img/menu/Bhel.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> Bhel</h4>
-                <p class="price">
-                  $10.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Bhel" data-product-price="10.99">
-                  <img src="assets/img/menu/Bhel.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Kachorichat.png" class="glightbox"><img src="assets/img/menu/Kachorichat.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> Kachori chat</h4>
-                <p class="price">
-                  $7.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Kachori chat" data-product-price="7.99">
-                  <img src="assets/img/menu/Kachorichat.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div>
-              <!-- Menu Item -->
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/khichu.png" class="glightbox"><img src="assets/img/menu/khichu.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4> Papdi khichu</h4>
-                <p class="price">
-                  $7.99
-                </p>
-                <div class="quantity-control-container" data-product-name="Khichu" data-product-price="7.99">
-                  <img src="assets/img/menu/khichu.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div>
-
-
-            </div>
           </div><!-- End Food Menu Content -->
+          <div class="tab-pane fade active show" id="vegetariancurries">
+            <table>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Malai Kofta</strong>
+                    <span>Mildly spiced cottage cheese and mashed potato dumplings cooked in thick cashew gravy.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="MalaiKofta" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Mattar Paneer</strong>
+                    <span>Fresh homemade cottage cheese and spiced green peas cooked in a traditional blend of northern indian spices.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="MattarPaneer"
+                    data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Saag Paneer</strong>
+                    <span>Finely pureed fresh garden spinach combined with aromatic spices and cooked with home made cottage cheese.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="SaagPaneer" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Saag Aloo</strong>
+                    <span>Finely pureed fresh garden spinach combined with aromatic spices and cooked with potatoes.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="SaagAloo"
+                    data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chana Masala</strong>
+                    <span>Chana Masala is a flavorful North Indian dish made with chickpeas cooked in a spicy, tangy tomato-based gravy, seasoned with aromatic spices.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChanaMasala"
+                    data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Jeera Aloo</strong>
+                    <span>Fresh potatoes sauteed with cumin seeds, fenugreek and tomatoes.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="JeeraAloo" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Butter Paneer</strong>
+                    <span>Fresh home made cottage cheese cooked in our famous creamy tomato sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ButterPaneer" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Mushroom Matar</strong>
+                    <span>Fresh mushroom and peas cooked in north indian style.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="MushroomMatar" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Dal Fry</strong>
+                    <span>Black lentils stewed on a slow fire overnight with tomatoes, ginger and fresh coriander with a blend of spices. no cream.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="DalFry"
+                    data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Aloo Gobi</strong>
+                    <span>Fresh potatoes and cauliflower florets cooked in a blend of fragrant spices and garnished with coriander. </span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="AlooGobi"
+                    data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Dal Makhani</strong>
+                    <span> Black lentils stewed on a slow fire overnight with tomatoes, ginger and fresh coriander with a blend of spices. finished with a touch of cream.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="DalMakhani" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Paneer Tikka Masala</strong>
+                    <span>Fresh home made cottage cheese marinated in aromatic spices then simmered in onion, bell pepper and tomato gravy.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PaneerTikkaMasala" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Mixed Vegetable Korma</strong>
+                    <span>Garden fresh seasonal vegetables cooked in a thick and aromatic creamy sauce with grounded cashew nuts and spices. a great way to get your daily serve of vegetables.</span>
+                  </div>
+                </td>
+                <td class="price">$22.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="MixedVegetableKorma" data-product-price="22.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
 
-          <div class="tab-pane fade" id="menu-breakfast">
+            </table>
 
-            <div class="tab-header text-center">
-              <h3>Drinks</h3>
-            </div>
+          </div><!-- End Food Menu Content -->
+          <div class="tab-pane fade active show" id="chickencurries">
+            <table>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chicken Korma</strong>
+                    <span>Boneless pieces of chicken cooked in a thick and aromatic creamy sauce with grounded cashew nuts and spices.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChickenKorma" data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Butter Chicken</strong>
+                    <span>Our house speciality. tender boneless succulent pieces of chicken cooked in the tandoor then finished in creamy tomato flavoured sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ButterChicken"
+                    data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chicken Madras</strong>
+                    <span>Tender boneless pieces of chicken cooked in a sauce with a delicate blend of traditional spices including dried coconut and mustard seeds. a traditional south indian curry.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChickenMadras" data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Saag Chicken</strong>
+                    <span>Finely pureed fresh garden spinach combined with aromatic spices and cooked with tender chunks of boneless chicken.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="SaagChicken"
+                    data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Punjabi Chicken Curry</strong>
+                    <span>Tender pieces of boneless chicken marinated and cooked in a mouth - watering blend of chef's classic spice. a traditional dish indeed.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PunjabiChickenCurry"
+                    data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chicken Do Pyaza</strong>
+                    <span>Do (two) piazza (onions) gets its name because onions appear twice in the cooking process. boneless pieces of chicken cooked with roasted cumin and other dry spices.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChickenDoPyaza" data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chicken Vindaloo</strong>
+                    <span>A tangy and hot sauce combined with aromatic spices and a hint of malt vinegar, cooked with tender chunks of boneless chicken. a traditional dish from the shores of goa.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChickenVindaloo" data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chicken Tikka Masala</strong>
+                    <span>Tender morsels of boneless chicken marinated in yoghurt and spices, smoked over charcoal and then simmered in onion, bell pepper and tomato gravy. one of the most popular indian curry in the united kingdom.
+                    </span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChickenTikkaMasala" data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Chicken Jalfrezi</strong>
+                    <span>Boneless pieces of chicken cooked in a thick and delicious tomato sauce enhanced with bell pepper, onion and fresh garden tomatoes.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ChickenJalfrezi"
+                    data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Mango Chicken</strong>
+                    <span>Tender morsels of boneless chicken smoked in the tandoor and then finished in our delectably fragrant mango sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$23.00</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="MangoChicken"
+                    data-product-price="23.00">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
 
-            <div class="row gy-5">
+          </div><!-- End Food Menu Content -->
+          <div class="tab-pane fade active show" id="seafoodcurries">
+            <table>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Goan Fish Curry</strong>
+                    <span>A fillet of fish cooked in fine thick tomato gravy and finished with lemon and coconut cream. an exotic dish from the beaches of goa.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="GoanFishCurry" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Fish Masala</strong>
+                    <span>Fillet of fish cooked in our traditional spicy tomato gravy, flavoured with sauteed onions and capsicum.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="FishMasala"
+                    data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Prawn Masala</strong>
+                    <span>Tiger prawns cooked in our traditional spicy tomato gravy, flavoured with sauteed onions and capsicum.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PrawnMasala" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Fish Vindaloo</strong>
+                    <span>Fillet of fish cooked in a tangy and hot sauce combined with aromatic spices and a hint of malt vinegar. a traditional dish from the shores of goa.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="FishVindaloo"
+                    data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Prawn Vindaloo</strong>
+                    <span>Tiger prawn cooked in a tangy and hot sauce combined with aromatic spices and a hint of malt vinegar. a traditional dish from the shores of goa.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PrawnVindaloo"
+                    data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Butter Fish</strong>
+                    <span>Fillet of fish cooked in our mild creamy tomato sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ButterFish" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Butter Prawn</strong>
+                    <span>Tiger prawns cooked in our mild creamy tomato sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ButterPrawn" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Prawn Malabari</strong>
+                    <span>Tiger prawns sauteed with onions, capsicum, tomatoes & fresh coconut milk, garnished with a sprinkle of coconut.
+                    </span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PrawnMalabari" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
 
-              <!-- Menu Item -->
+          </div><!-- End Food Menu Content -->
+          <div class="tab-pane fade active show" id="lambcurries">
+            <table>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Madras</strong>
+                    <span>Tender boneless pieces of lamb cooked in a sauce with a delicate blend of traditional spices including dried coconut and mustard seeds. a traditional south indian curry.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="GoanFishCurry" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Fish Masala</strong>
+                    <span>Fillet of fish cooked in our traditional spicy tomato gravy, flavoured with sauteed onions and capsicum.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="FishMasala"
+                    data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Prawn Masala</strong>
+                    <span>Tiger prawns cooked in our traditional spicy tomato gravy, flavoured with sauteed onions and capsicum.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PrawnMasala" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Fish Vindaloo</strong>
+                    <span>Fillet of fish cooked in a tangy and hot sauce combined with aromatic spices and a hint of malt vinegar. a traditional dish from the shores of goa.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="FishVindaloo"
+                    data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Prawn Vindaloo</strong>
+                    <span>Tiger prawn cooked in a tangy and hot sauce combined with aromatic spices and a hint of malt vinegar. a traditional dish from the shores of goa.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PrawnVindaloo"
+                    data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Butter Fish</strong>
+                    <span>Fillet of fish cooked in our mild creamy tomato sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ButterFish" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Butter Prawn</strong>
+                    <span>Tiger prawns cooked in our mild creamy tomato sauce.</span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="ButterPrawn" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-container">
+                    <strong>Prawn Malabari</strong>
+                    <span>Tiger prawns sauteed with onions, capsicum, tomatoes & fresh coconut milk, garnished with a sprinkle of coconut.
+                    </span>
+                  </div>
+                </td>
+                <td class="price">$25.50</td>
+                <td>
+                  <div class="quantity-control-container" data-product-name="PrawnMalabari" data-product-price="25.50">
+                    <button class="add-to-cart">
+                      <i class="fas fa-shopping-cart"></i> Cart
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Mangolassi.png" class="glightbox"><img src="assets/img/menu/Mangolassi.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4>Mango Lassi</h4>
-                <p class="price">
-                  $4.50
-                </p>
-                <div class="quantity-control-container" data-product-name="Mango Lassi" data-product-price="4.50">
-                  <img src="assets/img/menu/Mangolassi.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/Buttermilk.png" class="glightbox"><img src="assets/img/menu/Buttermilk.png"
-                    class="menu-img img-fluid" alt=""></a>
-                <h4>Buttermilk</h4>
-                <p class="price">
-                  $8.95
-                </p>
-                <div class="quantity-control-container" data-product-name="Buttermilk" data-product-price="5.95">
-                  <img src="assets/img/menu/Buttermilk.png" style="display: none;"></img>
-                  <button class="add-to-cart">
-                    <i class="fas fa-shopping-cart"></i> Add To Cart
-                  </button>
-                </div>
-              </div><!-- Menu Item -->
-            </div>
-          </div><!-- End Drinks Menu Content -->
+          </div><!-- End Food Menu Content -->
         </div>
+        
       </div>
     </section><!-- /Menu Section -->
 
@@ -385,7 +1027,7 @@
           <h2 style="text-align: left;">Pickup Address:</h2>
           <p style="color: red;">96 Stoddard Road, Wesley, Auckland 1041.</p>
         </div>
-      <div id="modal-items">
+        <div id="modal-items">
           <!-- Cart items will be dynamically inserted here -->
         </div>
         <p class="cart-total">
@@ -396,22 +1038,22 @@
           Orders for pickup and delivery are only available between 5PM and 12PM.
         </p>
         <button id="checkoutButton" class="buttondetails mraginleft">Checkout</button>
-      </div> 
+      </div>
       <!-- Container to center the icon -->
 
-   </div>
+    </div>
 
-              <!-- Modal for Cart -->
-        <div id="successpickup" class="modal" style="display: none;">
-          <div class="modal-content">
-            <div class="modal-header">
-              <p style="text-align: left;">Your order has been placed successfully. Please pay at counter.</p>
-              <span class="close" id="closeModalSuccesspickup">&times;</span>
-            </div>
-          </div>
+    <!-- Modal for Cart -->
+    <div id="successpickup" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p style="text-align: left;">Your order has been placed successfully. Please pay at counter.</p>
+          <span class="close" id="closeModalSuccesspickup">&times;</span>
         </div>
+      </div>
+    </div>
 
-     <!--checkout modal-->
+    <!--checkout modal-->
     <div id="checkoutcontainer" class="checkoutcontainer modal" style="display: none;">
       <div class="modal-content">
         <div class="container section-title paddingzero modal-header" data-aos="fade-up">
@@ -422,8 +1064,10 @@
           <h2 style="text-align: left;">Pickup Address:</h2>
           <p style="color: red;" id="savepickupaddress">96 Stoddard Road, Wesley, Auckland 1041.</p>
         </div>
-          <div class="checkoutformmargin">
-          <form id="checkoutForm" action="https://script.google.com/macros/s/AKfycbyJ87WEHDS7q4OE_2vqj02CuQRVZKUTp15zykz3-ttPZl5vdcR8cvqANczrkmmIMmpX/exec" method="POST">
+        <div class="checkoutformmargin">
+          <form id="checkoutForm"
+            action="https://script.google.com/macros/s/AKfycbyJ87WEHDS7q4OE_2vqj02CuQRVZKUTp15zykz3-ttPZl5vdcR8cvqANczrkmmIMmpX/exec"
+            method="POST">
             <div class="divcheckout">
               <label class="labelcheckout" for="firstName">First Name:</label>
               <input class="inputcheckout" type="text" id="firstName" name="firstName" required>
@@ -449,9 +1093,9 @@
           </form>
         </div>
       </div>
-     </div>
+    </div>
 
-    
+
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
