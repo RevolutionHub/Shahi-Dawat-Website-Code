@@ -73,7 +73,6 @@ function displayCart() {
         productElement.className = 'cart-item';
         productElement.innerHTML = `
             <div class="cart-item-details">
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
                 <span class="cart-item-name">${item.name}</span>
                 <div class="quantity-control">
                     <button class="decrease-btn" id="decreasebtn" onclick="changeQuantity(${index}, -1)">-</button>

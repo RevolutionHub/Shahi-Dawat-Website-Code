@@ -68,15 +68,14 @@ function displayCart() {
         productElement.className = 'cart-item';
         productElement.innerHTML = `
             <div class="cart-item-details">
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-                <span class="cart-item-name">${item.name}</span>
+                <span style="color: black;" class="cart-item-name">${item.name}</span>
                 <div class="quantity-control">
-                    <button class="decrease-btn" id="decreasebtn" onclick="changeQuantity(${index}, -1)">-</button>
-                    <span class="quantity">${item.quantity}</span>
-                    <button class="increase-btn" id="increasebtn" onclick="changeQuantity(${index}, 1)">+</button>
+                    <button  style="color: black;" class="decrease-btn" id="decreasebtn" onclick="changeQuantity(${index}, -1)">-</button>
+                    <span style="color: black;" class="quantity">${item.quantity}</span>
+                    <button style="color: black;" class="increase-btn" id="increasebtn" onclick="changeQuantity(${index}, 1)">+</button>
                 </div>
-                <span class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
-                <button class="remove-btn" id="removeitem" onclick="removeItem(${index})">&times;</button>
+                <span style="color: black;" class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
+                <button style="color: black;" class="remove-btn" id="removeitem" onclick="removeItem(${index})">&times;</button>
             </div>
         `;
         modalItems.appendChild(productElement);
@@ -179,14 +178,13 @@ function displaychekoutcart() {
         productElement.className = 'cart-item';
         productElement.innerHTML = `
             <div class="cart-item-details">
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-                <span class="cart-item-name">${item.name}</span>
+                <span style="color: black;" class="cart-item-name">${item.name}</span>
                 <div class="quantity-control">
-                    <button class="decrease-btn" id="decreasebtn" onclick="changeQuantitycheckout(${index}, -1)">-</button>
-                    <span class="quantity">${item.quantity}</span>
-                    <button class="increase-btn" id="increasebtn" onclick="changeQuantitycheckout(${index}, 1)">+</button>
+                    <button style="color: black;" class="decrease-btn" id="decreasebtn" onclick="changeQuantitycheckout(${index}, -1)">-</button>
+                    <span style="color: black;" class="quantity">${item.quantity}</span>
+                    <button style="color: black;" class="increase-btn" id="increasebtn" onclick="changeQuantitycheckout(${index}, 1)">+</button>
                 </div>
-                <span class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
+                <span style="color: black;" class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
                 <button class="remove-btn" id="removeitem" onclick="removeItemchekcout(${index})">&times;</button>
             </div>
         `;

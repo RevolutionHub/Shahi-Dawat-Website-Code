@@ -83,7 +83,7 @@
 
 /* Add to Cart Button */
 .buttondetails {
-    background-color: #ff7303;
+    background-color: #f01c1c;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -113,7 +113,7 @@
 }
 
 .deliverybutton{
-    background-color: #ff7303!important;
+    background-color: #f01c1c!important;
     border-color: none!important;
     border-bottom: none!important;
     color: white;
@@ -134,7 +134,7 @@
 }
 
 .deliverybutton:hover {
-    background-color: #ff7303; /* Darker yellow on hover */
+    background-color: #f01c1c; /* Darker yellow on hover */
 }
 .deliverybutton:active{
     background-color: black;
@@ -215,7 +215,7 @@
 }
 
 .quantity-control button {
-    background-color: #ff7303;
+    background-color: #f01c1c;
     border: none;
     padding: 5px 10px;
     font-size: 16px;
@@ -333,7 +333,7 @@
     position: fixed;
     transform: translateX(800%);
     padding: 15px;
-    background-color: #ff7303;
+    background-color: #2E7D32;
     color: white;
     border-radius: 5px;
     z-index: 1000;
@@ -403,4 +403,8 @@ td button {
 td button:hover {
     background: red;
     color: white;
+}
+
+.marginheading{
+    margin-top: 10px;
 }
