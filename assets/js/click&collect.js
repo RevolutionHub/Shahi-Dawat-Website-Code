@@ -92,6 +92,7 @@ function displayCart() {
 
     // Show the modal
     modal.style.display = 'block';
+    document.body.style.position = "fixed";
     const isWithinRange = checkButtonStatus();
     if (isWithinRange) {
         if (isDelivery === "true") {
@@ -156,6 +157,7 @@ document.getElementById('cart-link').onclick = function (event) {
 // Close the modal when the user clicks the close button
 closeModal.onclick = function () {
     modal.style.display = 'none';
+    document.body.style.position = ""; // Restore scrolling
 };
 
 closeModalcheckout.onclick = function () {
@@ -385,7 +387,6 @@ function displaychekoutcart() {
         productElement.className = 'cart-item';
         productElement.innerHTML = `
             <div class="cart-item-details">
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
                 <span class="cart-item-name">${item.name}</span>
                 <div class="quantity-control">
                     <button class="decrease-btn" id="decreasebtn" onclick="changeQuantitycheckout(${index}, -1)">-</button>
@@ -500,7 +501,7 @@ document.getElementById('checkoutForm').addEventListener('submit', function (eve
         return; // Stop form submission if the time field is empty
     }
 
-    fetch('https://script.google.com/macros/s/AKfycbwNlrdPOEAxwS6_9rBlHWpeZsWRknFOGKAuODm1MAyJUj_4-h_0Fxfk2Kr53VI2vMKX/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzK-lza1EAU0ow3XJ8Lkg8b4OPsSyyBQJoEAFLFLxV4NJyvTAfso02W5WZx2fXJiIxpfw/exec', {
         method: 'POST',
         mode: 'no-cors',  // This disables CORS checks
         body: formData

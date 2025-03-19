@@ -61,12 +61,29 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+  // const preloader = document.querySelector('#preloader');
+  // if (preloader) {
+  //   window.addEventListener('load', () => {
+  //     preloader.remove();
+  //   });
+  // }
+
+  const preloader = document.querySelector("#preloader");
+const gif = document.querySelector("#loading-gif");
+
+function removePreloader() {
+  setTimeout(() => {
+    preloader?.remove();
+  }, 4800); // Adjust the delay (1000ms = 1s)
+}
+
+if (gif?.complete) {
+  removePreloader(); // If GIF is cached, remove preloader with delay
+} else {
+  gif?.addEventListener("load", removePreloader); // Wait for GIF to fully load
+}
+
+  
 
   /**
    * Scroll top button

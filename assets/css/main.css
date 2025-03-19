@@ -98,8 +98,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 80px;
-  margin-right: 8px;
+  max-height: 120px;
 }
 
 .header .logo h1 {
@@ -701,7 +700,7 @@ section,
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .hero h1 {
@@ -1213,7 +1212,7 @@ h3 {
 --------------------------------------------------------------*/
 
 .preloader {
-  background-color: #f7f7f7;
+  background-color: black;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1225,7 +1224,7 @@ h3 {
   -webkit-transition: .6s;
   -o-transition: .6s;
   transition: .6s;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .preloader .preloader-circle {
@@ -1234,7 +1233,7 @@ h3 {
   position: relative;
   border-style: solid;
   border-width: 10px;
-  border-top-color: #ff7303;
+  border-top-color: var(--butonbgcolor);
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -1242,7 +1241,7 @@ h3 {
   border-radius: 50%;
   -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
   box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-  background-color: #000;
+  background-color: var(--bg);
   -webkit-animation: zoom 2000ms infinite ease;
   animation: zoom 2000ms infinite ease;
   -webkit-transition: .6s;
@@ -1251,7 +1250,7 @@ h3 {
 }
 
 .preloader .preloader-circle2 {
-  border-top-color: #ff7303
+  border-top-color:  var(--butonbgcolor)
 }
 
 .preloader .preloader-img {
@@ -1273,12 +1272,12 @@ h3 {
 }
 
 .preloader .preloader-img img {
-  max-width: 130px
+  max-width: 200px;
 }
 
 .preloader .pere-text strong {
   font-weight: 800;
-  color: #ff7303;
+  color: var(--butonbgcolor);
   text-transform: uppercase
 }
 

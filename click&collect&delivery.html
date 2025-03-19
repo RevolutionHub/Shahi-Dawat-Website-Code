@@ -46,7 +46,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto ">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <img class="logoimage" src="assets/img/logo.png" alt="">
+        <img class="logoimage" src="assets/img/logo.gif" alt="">
 
       </a>
 
@@ -1569,9 +1569,9 @@
     <div id="preloader">
       <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
-          <div class="preloader-circle"></div>
+          <!-- <div class="preloader-circle"></div> -->
           <div class="preloader-img pere-text">
-            <img src="assets/img/logo.png" alt="">
+            <img id="loading-gif" src="assets/img/logo-starting.gif" alt="">
           </div>
         </div>
       </div>
@@ -1638,7 +1638,7 @@
         <div id="successpickup" class="modal" style="display: none;">
           <div class="modal-content">
             <div class="modal-header">
-              <p style="text-align: left;">Your order has been placed successfully and will be ready for pickup in 30 minutes.
+              <p style="text-align: left; color:#2E7D32;">Your order has been placed successfully and will be ready for pickup in 30 minutes.
                 <br> Please call us at +64 22 077 2377 if you have any questions.</p>
               <span class="close" id="closeModalSuccesspickup">&times;</span>
             </div>
@@ -1649,12 +1649,12 @@
     <div id="checkoutcontainer" class="checkoutcontainer modal" style="display: none;">
       <div class="modal-content">
         <div class="container section-title paddingzero modal-header" data-aos="fade-up">
-          <p><span>Your </span> <span class="description-title">Details<br></span></p>
+          <p style="text-align: left;font-size: 2rem;"><span>Your Details<br></span></p>
           <span class="close" id="closeModalcheckout">&times;</span>
         </div>
         <div class="modal-header" id="pickupaddresscheckout" style="display: none;">
-          <h2 style="text-align: left;">Pickup Address:</h2>
-          <p style="color:var(--butonbgcolor);" id="savepickupaddress">547 Te Atatu Road Waitākere, Auckland 0610</p>
+          <h2 class="margizero" style="text-align: left; color:var(--headercolor);font-size: 1rem;">Pickup Address:</h2>
+          <p  class="margizero" style="color:var(--headercolor);" id="savepickupaddress">547 Te Atatu Road Waitākere, Auckland 0610</p>
         </div>
         <div class="modal-header" id="deliveryaddresscheckout" style="display: none;">
           <h2 style="text-align: left;">Delivery Address:</h2>
@@ -1663,7 +1663,7 @@
           </div>
         </div>
         <div class="checkoutformmargin">
-          <form id="checkoutForm" action="https://script.google.com/macros/s/AKfycbwNlrdPOEAxwS6_9rBlHWpeZsWRknFOGKAuODm1MAyJUj_4-h_0Fxfk2Kr53VI2vMKX/exec" method="POST">
+          <form id="checkoutForm" action="https://script.google.com/macros/s/AKfycbzK-lza1EAU0ow3XJ8Lkg8b4OPsSyyBQJoEAFLFLxV4NJyvTAfso02W5WZx2fXJiIxpfw/exec" method="POST">
             <div class="divcheckout">
               <label class="labelcheckout" for="firstName">First Name:</label>
               <input class="inputcheckout" type="text" id="firstName" name="firstName" required>
@@ -1687,8 +1687,8 @@
             <div class="order-summary">
               <h3>Order Summary</h3>
               <div id="checkout-items"><!-- Cart items will be dynamically inserted here --></div>
-              <p><strong>Delivery Charges:</strong> <span id="checkout-Delivery"></span></p>
-              <p><strong>Total:</strong> <span id="checkout-total"></span></p>
+              <p  style="display: none;"><strong>Delivery Charges:</strong> <span id="checkout-Delivery"></span></p>
+              <p style="font-size: 1.2rem;text-align: right;"><strong class="marginright40">Total:</strong> <span id="checkout-total" class="marginright40"></span></p>
               <p id="freedeliverymessage" style="color:var(--butonbgcolor); display: none;">Free delivery is available for orders over $50.00. <br> There is extra $10 delivery charge on Order below $50.00.</p>
             </div>
             <button type="submit" id="placeOrderButton" class="buttondetails" style="width: 150px;">Place Order</button>
