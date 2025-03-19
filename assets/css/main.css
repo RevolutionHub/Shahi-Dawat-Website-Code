@@ -209,10 +209,6 @@ h6 {
     padding: 15px 14px;
   }
 
-  .navmenu>ul>li:last-child {
-    padding-right: 0;
-  }
-
   .navmenu a,
   .navmenu a:focus {
     color: var(--navtextcolor);
@@ -1573,6 +1569,7 @@ body.light-theme {
   --background: #2E7D32;
   --headercolor: #2E7D32;
   --paginationbgcolor:#000000;
+  --bg:white;
 }
 
 body.dark-theme {
@@ -1584,6 +1581,7 @@ body.dark-theme {
   --background: black;
   --headercolor: #2E7D32;
   --paginationbgcolor:white;
+  --bg:black;
 }
 
 
