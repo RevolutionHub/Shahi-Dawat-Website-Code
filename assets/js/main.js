@@ -176,39 +176,26 @@
 })();
 
 
-/**
-   * Preload spinner
-   */
+// Function to set the default theme
+function setDefaultTheme() {
+  document.body.classList.add("dark-theme"); // Default to Dark Mode
+  document.body.classList.remove("light-theme");
+  document.getElementById("themeSwitch").checked = true; // Toggle switch ON by default
+}
 
- //logo spinner
-//  $(window).on('load', function () {
-//   $('#preloader-active').delay(450).fadeOut('slow');
-//   $('body').delay(450).css({
-//     'overflow': 'visible'
-//   });
-// });
-
-// Initiate the wowjs
-// new WOW().init();
-
- 
-
-document.getElementById('Cateringdetails').addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  var formData = new FormData(this);
-
-  fetch('https://script.google.com/macros/s/AKfycbwkxJhvQ5ujs0F46C4pXyDLIrxF_Asl4vJeGwPOwbn-KSk-61krKX3Y16jqmp4hfVOb/exec', {
-      method: 'POST',
-      mode: 'no-cors',  // This disables CORS checks
-      body: formData
-  })
-  .catch(error => {
-      console.error('Error:', error);
-  });
-
-  // Reset form and show alert after initiating fetch (no guarantee of success)
-  document.getElementById('Cateringdetails').reset();
-  alert("Your catering service request has been sent. We will call you shortly. Thank you!");
+// Toggle theme on switch change
+document.getElementById("themeSwitch").addEventListener("change", function() {
+  if (this.checked) {
+      document.body.classList.add("dark-theme");
+      document.body.classList.remove("light-theme");
+  } else {
+      document.body.classList.add("light-theme");
+      document.body.classList.remove("dark-theme");
+  }
 });
+
+// Set default theme on page load
+setDefaultTheme();
+
+
 
