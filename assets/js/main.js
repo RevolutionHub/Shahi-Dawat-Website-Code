@@ -74,7 +74,7 @@ const gif = document.querySelector("#loading-gif");
 function removePreloader() {
   setTimeout(() => {
     preloader?.remove();
-  }, 4800); // Adjust the delay (1000ms = 1s)
+  }, 3000); // Adjust the delay (1000ms = 1s)
 }
 
 if (gif?.complete) {

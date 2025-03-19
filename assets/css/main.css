@@ -1225,6 +1225,7 @@ h3 {
   -o-transition: .6s;
   transition: .6s;
   margin: 0 auto;
+  padding-right: 150px;
 }
 
 .preloader .preloader-circle {
