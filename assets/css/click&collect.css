@@ -460,7 +460,8 @@ body.light-theme {
     padding: 160px 0!important;
   }
   .margin5px{
-margin: 5px;
+    margin: 5px;
+    margin-right: 0px;
   }
   .marginheading{
     margin-top: 0px!important;
