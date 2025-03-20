@@ -348,11 +348,12 @@
   #menu-delivery .btn{
         /* color: var(--contrast-color); */
         background: var(--butonbgcolor);
-        font-size: 20px;
+        font-size: 1rem;
         padding: 8px 26px;
         margin: 0;
         border: none;
         border-radius: 0px;
+        font-weight: 500;
   }
   #menu-delivery .btn.active{
     color: var(--buttontextcolor);
@@ -414,6 +415,9 @@ td button:hover {
 .marginheading{
     margin-top: 10px;
 }
+.margin5px{
+    margin: 5px;
+}
 
 /* Light & Dark Theme Styles */
 body.light-theme {
@@ -449,4 +453,16 @@ body.light-theme {
   }
   .marginright20{
     margin-right: 20px;
+  }
+
+  @media (max-width: 1200px) {
+  .clickcollect-section {
+    padding: 160px 0!important;
+  }
+  .margin5px{
+margin: 5px;
+  }
+  .marginheading{
+    margin-top: 0px!important;
+  }
   }
