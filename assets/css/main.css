@@ -25,7 +25,7 @@
   /* The default color of the main navmenu links */
   --nav-hover-color: #f01c1c;
   /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff;
+  --nav-mobile-background-color: var(--bg);
   /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff;
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -157,6 +157,7 @@ h6 {
 
   .buttonfornav {
     display: block !important;
+    width: 63%;
   }
   .preloader {
     padding-right: 200px!important;
@@ -404,7 +405,7 @@ h3 {
     color: var(--navtextcolor);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
+    font-size: 2rem!important;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -471,7 +472,7 @@ h3 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    color: var(--butonbgcolor);
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -484,7 +485,8 @@ h3 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    /* background: rgba(33, 37, 41, 0.8); */
+    background: var(--bg);
     transition: 0.3s;
   }
 
