@@ -193,26 +193,33 @@ if (gif?.complete) {
 })();
 
 
-// Function to set the default theme
 function setDefaultTheme() {
-  document.body.classList.add("dark-theme"); // Default to Dark Mode
-  document.body.classList.remove("light-theme");
-  document.getElementById("themeSwitch").checked = true; // Toggle switch ON by default
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'dark') {
+    document.body.classList.add("dark-theme");
+    document.body.classList.remove("light-theme");
+    document.getElementById("themeSwitch").checked = true; // Ensure the switch is ON
+  } else {
+    document.body.classList.add("light-theme");
+    document.body.classList.remove("dark-theme");
+    document.getElementById("themeSwitch").checked = false; // Ensure the switch is OFF
+  }
 }
 
 // Toggle theme on switch change
 document.getElementById("themeSwitch").addEventListener("change", function() {
   if (this.checked) {
-      document.body.classList.add("dark-theme");
-      document.body.classList.remove("light-theme");
+    document.body.classList.add("dark-theme");
+    document.body.classList.remove("light-theme");
+    localStorage.setItem('theme', 'dark'); // Save 'dark' to localStorage
   } else {
-      document.body.classList.add("light-theme");
-      document.body.classList.remove("dark-theme");
+    document.body.classList.add("light-theme");
+    document.body.classList.remove("dark-theme");
+    localStorage.setItem('theme', 'light'); // Save 'light' to localStorage
   }
 });
 
-// Set default theme on page load
+// Set the default theme when the page loads
 setDefaultTheme();
-
-
 
