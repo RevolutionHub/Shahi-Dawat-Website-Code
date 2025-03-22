@@ -232,8 +232,8 @@ h3 {
 }
 
 .navmenu {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -643,6 +643,7 @@ h3 {
 
 .reservation-padding {
   padding-top: 20px;
+  padding-left: 100px;
 }
 
 .paddingmenu {
@@ -861,6 +862,8 @@ h3 {
   text-align: center;
   border: 4px solid color-mix(in srgb, var(--default-color), transparent 30%);
   padding: 22px;
+  margin-top: 120px;
+  color: var(--headercolor);
 }
 
 .book-a-table h3 {
@@ -872,7 +875,7 @@ h3 {
 .book-a-table p {
   color: var(--accent-color);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -1661,3 +1664,20 @@ body.dark-theme {
 }
 
 
+
+.book-a-table .btn-get-started {
+  color: var(--buttontextcolor);
+  background: var(--butonbgcolor);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.disabled-btn {
+  background-color: #ccc!important; /* Light gray background */
+  cursor: not-allowed; /* Show a not-allowed cursor */
+}
